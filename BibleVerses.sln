@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibleVerseCard", "BibleVerseCard\BibleVerseCard.csproj", "{4500872E-81B8-4272-A6DE-3CB53A7214B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4500872E-81B8-4272-A6DE-3CB53A7214B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4500872E-81B8-4272-A6DE-3CB53A7214B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4500872E-81B8-4272-A6DE-3CB53A7214B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4500872E-81B8-4272-A6DE-3CB53A7214B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E85C77B-522C-4960-9101-9637B9061E25}
+	EndGlobalSection
+EndGlobal
