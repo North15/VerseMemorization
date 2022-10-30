@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Serialization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,21 @@ namespace BibleVerseCard.Models
 {
     public class Bible
     {
-        public List<KeyValuePair<int, int>> Genesis = new List<KeyValuePair<int, int>>
+        public Book Genesis = new Book
+        {
+            BookName = "Genesis",
+            VersesByChapter = new List<VersesByChapter>
+            {
+                {
+                    1,31
+                }
+            }
+            
+                
+
+        }
+
+        public List<KeyValuePair<int, int>> Genesis1 = new List<KeyValuePair<int, int>>
         {
             new KeyValuePair<int,int>(1,31),
             new KeyValuePair<int,int>(2,25),

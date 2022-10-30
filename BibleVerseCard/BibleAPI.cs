@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Windows.Automation.Peers;
 
 namespace BibleVerseCard
 {
@@ -32,7 +33,9 @@ namespace BibleVerseCard
                 int chapterId = random1.Next(0, 1);
                 FieldInfo chapterName = bible.GetType().GetField(book);
                 object value = chapterName.GetValue(bible);
-               
+                TEST theBible = (TEST)value;
+                int counter = 0;
+
 
                 //Get Verse
                 Random random2 = new Random();

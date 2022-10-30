@@ -1,8 +1,19 @@
 ﻿using System.Collections.Generic;
-using System.Windows.Documents;
 
 namespace BibleVerseCard.Models
 {
+    public class Book
+    {
+        public string BookName { get; set; }
+        public List<VersesByChapter> VersesByChapter { get; set; }
+    }
+
+    public class VersesByChapter
+    {
+        public int chapter { get; set; }
+
+        public int verseCount { get; set; }
+    }
     public class Verses
     {
         public string Book_Id { get; set; }
@@ -11,15 +22,4 @@ namespace BibleVerseCard.Models
         public string Text { get; set; }
     }
 
-    public class VersesByChapter
-    {
-        public int chapter { get; set; }
-
-        public List<int> verseCount { get; set; } = new List<int>();
-    }
-
-    public class TheBible
-    {
-        public List<KeyValuePair<int, int>> keyValuePairs { get; set; }
-    }
 }
