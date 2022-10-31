@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibleVerseCard"
         mc:Ignorable="d"
-        Title="Memorize by Copying" Height="447" Width="800"
+        Title="Memorize by Copying" Height="457" Width="800"
         FocusManager.FocusedElement="{Binding ElementName=C_Book}">
     <Grid Margin="0,0,0,3" Background="#FFFBFBFB">
         <GroupBox Header="Verse" Margin="10,5,10,0" Height="175" VerticalAlignment="Top" FontWeight="Bold">
@@ -28,8 +28,7 @@
                 <TextBox x:Name="C_Text" HorizontalAlignment="Center" Margin="0,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="748" Height="84"/>
             </Grid>
         </GroupBox>
-        <Button x:Name="btn_Check" Content="Check" HorizontalAlignment="Left" Margin="593,378,0,0" Width="71" Click="btn_Check_Click" Height="20" VerticalAlignment="Top"/>
-        <Button x:Name="btn_Close" Content="Close" HorizontalAlignment="Left" Margin="680,378,0,0" Width="71" Click="btn_Close_Click" Height="20" VerticalAlignment="Top"/>
-        <Button x:Name="btn_New_Verse" Content="New Verse" HorizontalAlignment="Left" Margin="506,378,0,0" Width="71" Click="btn_New_Verse_Click" Height="20" VerticalAlignment="Top"/>
+        <Button x:Name="btn_Check" Content="Check" HorizontalAlignment="Left" Margin="681,381,0,0" Width="71" Click="btn_Check_Click" Height="20" VerticalAlignment="Top"/>
+        <Button x:Name="btn_New_Verse" Content="New Verse" HorizontalAlignment="Left" Margin="594,381,0,0" Width="71" Click="btn_New_Verse_Click" Height="20" VerticalAlignment="Top"/>
     </Grid>
 </Window>
