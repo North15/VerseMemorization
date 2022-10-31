@@ -14,7 +14,7 @@
                 <TextBox x:Name="V_Book" HorizontalAlignment="Left" Margin="57,8,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="22" IsEnabled="False"/>
                 <Label Content="Chapter:" HorizontalAlignment="Left" Margin="211,6,0,0" VerticalAlignment="Top" Width="58"/>
                 <TextBox x:Name="V_Chapter" HorizontalAlignment="Left" Margin="274,8,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="22" IsEnabled="False"/>
-                <Label Content="Text:" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="58"/>
+                <Label Content="Verse:" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="58"/>
                 <TextBox x:Name="V_Text" HorizontalAlignment="Center" Margin="0,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="748" Height="84" IsEnabled="False"/>
             </Grid>
         </GroupBox>
@@ -24,7 +24,7 @@
                 <TextBox x:Name="C_Book" HorizontalAlignment="Left" Margin="57,8,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="22"/>
                 <Label Content="Chapter:" HorizontalAlignment="Left" Margin="211,6,0,0" VerticalAlignment="Top" Width="58"/>
                 <TextBox x:Name="C_Chapter" HorizontalAlignment="Left" Margin="274,8,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="22"/>
-                <Label Content="Text:" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="58"/>
+                <Label Content="Verse:" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="58"/>
                 <TextBox x:Name="C_Text" HorizontalAlignment="Center" Margin="0,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="748" Height="84"/>
             </Grid>
         </GroupBox>

@@ -5,7 +5,27 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Scroll.ico</ApplicationIcon>
+    <Title>Memorize By Copying</Title>
+    <Authors>Jacob North</Authors>
+    <Company>North Software</Company>
+    <Product>Memorize By Copying</Product>
+    <Description>A simple app to help with scripture memorization</Description>
+    <PackageIcon>128-Scroll.png</PackageIcon>
+    <RepositoryUrl>https://github.com/North15/VerseMemorization</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Scroll.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\128-Scroll.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />

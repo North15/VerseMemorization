@@ -1,17 +1,22 @@
 ﻿using BibleVerseCard.Models;
-using BibleVerseCard;
 using System.Windows;
 using System.Threading.Tasks;
 using System;
 
+
+
 namespace BibleVerseCard
 {
+
+
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
             SetVerseInWindowAsync();
+            Title = "Memorize by Copying";
         }
 
         private void btn_Check_Click(object sender, RoutedEventArgs e)
@@ -58,13 +63,13 @@ namespace BibleVerseCard
         {
             BibleAPI bibleAPI = new BibleAPI();
             Verses verse = new Verses();
-            var newReference = await bibleAPI.GetVerse();
-            foreach(var v in newReference.Verses) { verse = v; }
+            ResponseWithVerse newReference = await bibleAPI.GetVerse();
+            foreach(var v in newReference.Response.Verses) { verse = v; }
             if(newReference != null)
             {
-                V_Book.Text = verse.Book_Name.Trim();
-                V_Chapter.Text = verse.Chapter.Trim();
-                V_Text.Text = verse.Text.Trim();
+                V_Book.Text = verse.Book_Name.Trim().Replace("\n", String.Empty);
+                V_Chapter.Text = verse.Chapter.Trim().Replace("\n", String.Empty);
+                V_Text.Text = newReference.Verse + " " + verse.Text.Trim().Replace("\n", String.Empty);
             }
             else
             {
