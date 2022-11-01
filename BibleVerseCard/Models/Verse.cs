@@ -13,6 +13,6 @@ namespace BibleVerseCard.Models
         public int ChapterId { get; set; }
         public virtual Chapter Chapter { get; set; }
         public string Text { get; set; }
-        public bool IsSelected { get; set; }
+        public bool? IsSelected { get; set; }
     }
 }
